@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Canvas Module File Downloader",
+  "version": "2.0.0",
+  "description": "Adds a button to Canvas Modules pages that downloads every attached file as one zip, with a folder per module (week).",
+  "minimum_chrome_version": "116",
+  "permissions": ["downloads", "offscreen"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/courses/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
