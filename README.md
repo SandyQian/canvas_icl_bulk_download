@@ -1,5 +1,5 @@
 # canvas_icl_bulk_download
-Vibe coded with Claude, this is is a chrome extension that adds a 'bulk download' button to canvas module page so that you can bulk-download all the attached files on the page. 
+This is a chrome extension that adds a 'bulk download' button to canvas module page so that you can bulk-download all the attached files on the page. 
 The files are downloaded as a .zip while files are organized by folders named with the session names on the module page. 
 
 ## Install
